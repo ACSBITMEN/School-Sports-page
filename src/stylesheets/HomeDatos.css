@@ -1,0 +1,18 @@
+#HomeDatos {
+  background-color: #202020;
+  color: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem 0;
+}
+
+.dato:nth-child(2) {
+  margin: 2rem;
+}
+
+#HomeDatos svg {
+  width: 30px;
+  height: 30px;
+}

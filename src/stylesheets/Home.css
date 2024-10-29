@@ -1,0 +1,17 @@
+#Home {
+  width: 100%;
+  max-width: 1500px;
+  height: 100%;
+}
+
+.secction {
+  background-color: #9e9ca3;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.secction:nth-child(1) {
+  background-color: #303030;
+  color: #fff;
+  height: 600px;
+}

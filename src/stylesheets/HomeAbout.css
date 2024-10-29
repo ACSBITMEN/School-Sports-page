@@ -1,0 +1,17 @@
+#HomeAbout {
+  background-color: #c2c2c2;
+  height: 400px;
+}
+
+#HomeAbout h3 {
+  margin: 1rem 0;
+}
+
+
+.ContainerAbout {
+  display: flex;
+}
+
+.ContainerAbout div {
+  width: 50%;
+}
