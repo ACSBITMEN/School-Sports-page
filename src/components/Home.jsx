@@ -3,6 +3,7 @@ import '../stylesheets/Home.css';
 import HomeDatos from './Home-Datos.jsx';
 import HomeAbout from './Home-About.jsx';
 import HomeCategories from './Home-Categories.jsx';
+import HomeSedes from './Home-Sedes.jsx';
 
 function Home() {
   return (
@@ -14,10 +15,8 @@ function Home() {
       <HomeDatos />
       <HomeAbout />
       <HomeCategories />
-    
-      <div className="secction">Sedes y horarios
+      <HomeSedes />
 
-      </div>
       <div className="secction">Articulos de interes
 
       </div>

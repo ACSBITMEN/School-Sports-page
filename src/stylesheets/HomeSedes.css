@@ -1,0 +1,26 @@
+/* src/stylesheets/HomeSedes.css */
+.secction {
+  /* Tus estilos */
+}
+
+.sedes select {
+  margin-bottom: 20px;
+}
+
+.Container-Sedes h4 {
+  margin-top: 20px;
+}
+
+.SubContainerSedes {
+  display: flex;
+}
+
+#MapSede iframe {
+  max-width: 80%;
+  height: 450px;
+  border: none;
+}
+
+#InfoSede {
+  margin-top: 20px;
+}
