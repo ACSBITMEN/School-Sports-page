@@ -1,0 +1,36 @@
+#HomeCategories {
+  background-color: #c2c2c2;
+  height: 100%;
+  padding: 1rem;
+}
+
+
+#HomeCategories h3 {
+  margin: .5rem 0;
+}
+
+.ContainerCategories{
+  display: flex;
+  flex-direction: row;
+}
+
+.ContainerText p {
+  text-align: justify;
+}
+
+.ContainerText ul {
+  text-align: left;
+}
+
+
+#HomeCategories .ContainerImg {
+  width: 100%;
+  padding: 1rem 1.5rem;
+}
+
+#HomeCategories .ContainerImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}

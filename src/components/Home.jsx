@@ -2,6 +2,7 @@
 import '../stylesheets/Home.css';
 import HomeDatos from './Home-Datos.jsx';
 import HomeAbout from './Home-About.jsx';
+import HomeCategories from './Home-Categories.jsx';
 
 function Home() {
   return (
@@ -10,14 +11,10 @@ function Home() {
       <h1>Bienvenido a la Página de Inicio</h1>
       <p>Este es el contenido de la página de inicio.</p>
       </div>
-
       <HomeDatos />
-
       <HomeAbout />
-
-      <div className="secction">Categorias
-
-      </div>
+      <HomeCategories />
+    
       <div className="secction">Sedes y horarios
 
       </div>

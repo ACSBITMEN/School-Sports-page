@@ -1,6 +1,6 @@
 #Home {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1300px;
   height: 100%;
 }
 
@@ -13,5 +13,5 @@
 .secction:nth-child(1) {
   background-color: #303030;
   color: #fff;
-  height: 600px;
+  height: 700px;
 }

@@ -11,10 +11,10 @@ function HomeAbout() {
           <div id="carouselExampleFade" className="carousel slide carousel-fade">
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src="https://img.freepik.com/premium-photo/soccer-celebration-kids-team-with-trophy-soccer-field-happy-excited-winning-game-sports-boy-children-goal-success-teamwork-football-with-gold-medal-award-with-winner-smile_590464-100271.jpg" className="d-block w-100" alt="..."/>
+                <img src="https://misamistosos.com/wp-content/uploads/2021/09/Claves_para_liderar_un_equipo_de_futbol-1024x682.jpg" className="d-block w-100" alt="Img1" />
               </div>
               <div className="carousel-item">
-                <img src="https://misamistosos.com/wp-content/uploads/2021/09/Claves_para_liderar_un_equipo_de_futbol-1024x682.jpg" className="d-block w-100" alt="Img1" />
+                <img src="https://img.freepik.com/premium-photo/soccer-celebration-kids-team-with-trophy-soccer-field-happy-excited-winning-game-sports-boy-children-goal-success-teamwork-football-with-gold-medal-award-with-winner-smile_590464-100271.jpg" className="d-block w-100" alt="..."/>
               </div>
               <div className="carousel-item">
                 <img src="https://www.ussportscamps.com/media/images/soccer/nike/camps/CS-gallery-soccer-boyshot.jpg" className="d-block w-100" alt="..."/>
@@ -33,7 +33,7 @@ function HomeAbout() {
             </button>
           </div>
         </div>
-        <div className="history">
+        <div className="ContainerText">
           <p>En Soccer School, creemos que el fútbol es más que un deporte: es una pasión, una disciplina y una herramienta de crecimiento para los jóvenes. <b>Fundada en 2016</b>, nuestra escuela se dedica a formar a futuros atletas, no solo en habilidades técnicas y tácticas, sino también en valores como el respeto, el trabajo en equipo y la perseverancia. <br />
           <br />
           Nuestro equipo de entrenadores está compuesto por <b>profesionales altamente calificados</b>, muchos de ellos con experiencia en ligas profesionales, y están comprometidos en guiar y motivar a cada niño en su camino deportivo. Adaptamos nuestras metodologías a diferentes edades y niveles de habilidad, desde principiantes hasta jugadores avanzados, siempre asegurándonos de ofrecer un ambiente seguro, inclusivo y divertido <Link to="/about">...Ver más</Link>
