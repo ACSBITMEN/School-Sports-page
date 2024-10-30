@@ -1,10 +1,11 @@
 #HomeAbout {
   background-color: #c2c2c2;
-  height: 400px;
+  height: 100%;
+  padding: 1rem;
 }
 
 #HomeAbout h3 {
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 
 
@@ -12,6 +13,17 @@
   display: flex;
 }
 
-.ContainerAbout div {
+.ContainerAbout .ContainerImg,  .ContainerAbout .history {
   width: 50%;
+}
+
+.ContainerAbout .ContainerImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.history {
+  padding: 1rem 2rem;
+  text-align: justify;
 }
