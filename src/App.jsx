@@ -6,7 +6,9 @@ import Router from './router';
 function App() {
   return (
     <>
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
       <main>
         <Router />
       </main>

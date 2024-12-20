@@ -1,4 +1,4 @@
-header, footer, nav, aside, main, h1 {
+header, footer, aside, main, h1 {
   display: flex;
   text-align: center;
   align-items: center;
@@ -6,20 +6,18 @@ header, footer, nav, aside, main, h1 {
 }
 
 header {
-  background-color: #604242;
-  border: 1px solid black;
-  margin-bottom: 150px;
-}
-
-nav {
-  background-color: #506050;
+  background-color: #161616;
   border: 1px solid black;
 }
 
 main {
-  background-color: #242424;
+  background-color: #000;
   display: flex;
   flex-direction: column;
+}
+
+.ContainerText {
+  border-radius: 9px;
 }
 
 footer {

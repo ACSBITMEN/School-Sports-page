@@ -1,11 +1,15 @@
 #HomeDatos {
-  background-color: #202020;
+  background-color: #000;
   color: #fff;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 0 3rem;
+  padding: 3rem 0 1rem;
+  user-select: none; /* Previene la selección */
+  -webkit-user-select: none; /* Compatibilidad con navegadores WebKit */
+  -moz-user-select: none; /* Compatibilidad con Firefox */
+  -ms-user-select: none; /* Compatibilidad con Internet Explorer */
 }
 
 .dato:nth-child(2) {

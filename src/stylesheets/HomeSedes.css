@@ -1,6 +1,15 @@
 /* src/stylesheets/HomeSedes.css */
-.secction {
-  /* Tus estilos */
+#HomeSedes {
+  background-color: #dee3ec;
+  border-radius: 10px;
+  margin: 0 1rem 1rem;
+}
+
+.textoIntroSedes {
+  background-color: aquamarine;
+  margin: 0 1rem 20px;
+  text-align: justify;
+  max-width: 900px;
 }
 
 .sedes select {

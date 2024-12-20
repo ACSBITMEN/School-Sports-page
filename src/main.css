@@ -9,8 +9,10 @@
   flex-direction: column;
   justify-content: space-between;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100%;
 }
 
 main {
-  height: 100%;
+  min-height: 90vh;
+  flex: 1;
 }

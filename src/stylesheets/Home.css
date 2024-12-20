@@ -5,7 +5,6 @@
 }
 
 #HomeAbout, #HomeCategories, #HomeSedes {
-  background-color: #dadada;
   height: 100%;
   padding: 1rem;
 }
@@ -17,7 +16,7 @@ h3 {
 }
 
 .secction {
-  background-color: #9e9ca3;
+  background-color: #cccccc;
   height: 200px;
   border: 1px solid black;
 }
@@ -25,5 +24,5 @@ h3 {
 .secction:nth-child(1) {
   background-color: #303030;
   color: #fff;
-  height: 700px;
+  height: 740px;
 }

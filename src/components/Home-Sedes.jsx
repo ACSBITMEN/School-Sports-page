@@ -60,8 +60,8 @@ function HomeSedes() {
 
   return (
     <div id='HomeSedes' className='secction'>
-      <h3>Sedes y Horarios</h3>
-      <p>En Soccer School, contamos con 7 sedes a nivel nacional ubicadas estratégicamente para tu comodidad en las principales ciudades del país y ofrecemos horarios flexibles adaptados a las necesidades de cada familia. Nuestro objetivo es que el fútbol sea accesible para todos, brindando espacios seguros y bien equipados para que tus hijos disfruten de su entrenamiento.</p>
+      <h3>Conoce nuestras Sedes y Horarios</h3>
+      <p className='textoIntroSedes'>En Soccer School, contamos con 7 sedes a nivel nacional ubicadas estratégicamente para tu comodidad en las principales ciudades del país y ofrecemos horarios flexibles adaptados a las necesidades de cada familia. Nuestro objetivo es que el fútbol sea accesible para todos, brindando espacios seguros y bien equipados para que tus hijos disfruten de su entrenamiento.</p>
       <div className="sedes">
         <p>Escoja la sede:</p>
         <select name="SelectSede" id="SelectSede" onChange={handleChange}>
