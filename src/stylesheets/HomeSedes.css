@@ -3,13 +3,16 @@
   background-color: #dee3ec;
   border-radius: 10px;
   margin: 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .textoIntroSedes {
   background-color: aquamarine;
   margin: 0 1rem 20px;
   text-align: justify;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .sedes select {
@@ -25,11 +28,12 @@
 }
 
 #MapSede iframe {
-  max-width: 80%;
-  height: 450px;
+  max-width: 450px;
+  height: 300px;
   border: none;
 }
 
 #InfoSede {
   margin-top: 20px;
+  background-color: rgb(227, 203, 250);
 }

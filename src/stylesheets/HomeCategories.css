@@ -14,8 +14,8 @@
 }
 
 .ContainerCategories .left {
-  background: #f5f5f5;
-  min-height: 390px;
+  background: #f2f2f2;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   padding: 1rem 3rem 1rem 2rem;
@@ -31,7 +31,7 @@
 .ContainerCategories .right {
   background: #00000000; /* Color para el lado derecho */
   clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);;
-  top: 10px;
+  top: 13px;
   bottom: 0;
   right: 5px;
   left: 45%;
@@ -55,14 +55,31 @@
 }
 
 .ContainerCategories .ContainerText p {
-  padding: 0 1rem 1rem 0;
-  font-size: 1em;
+  padding: 0 1rem 1.4rem 0;
+  font-size: .95em;
   text-align: left;
 }
 
-.ContainerText ul {
+.ContainerCategories .ContainerText ul {
   text-align: left;
   padding-left: 1.2rem;
   font-size: .95em;
 }
 
+.ContainerCategories .ContainerText ul li {
+  background-color: #e2e2e2;
+  font-size: .9em;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.ContainerCategories .ContainerText ul li b{
+  background-color: #b9b9b9;
+  color: rgb(0, 0, 0);
+  padding: 2px 10px 2px 5px;
+  font-size: 1em;
+  font-weight: 400;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);;
+}

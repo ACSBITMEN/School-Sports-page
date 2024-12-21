@@ -9,16 +9,16 @@ function HomeCategories() {
           <h3>Selección de Categorias</h3>
           <p>Contamos con <b>Todas las categorías</b> en formación mixta, estas están diseñadas para adaptarse a la edad y nivel de cada niño y niña, promoviendo su crecimiento en habilidades técnicas, tácticas y en valores como el trabajo en equipo:</p>
           <ul>
-            <li><b>Infantil (4-6 años)</b>: Primer contacto con el balón, juegos y desarrollo motor básico.</li>
-            <li><b>Prebenjamín (7-8 años)</b>: Introducción a reglas, posición en la cancha y trabajo en equipo.</li>
-            <li><b>Benjamín (9-10 años)</b>: Enfoque en técnica, defensa y experiencia en partidos.</li>
-            <li><b>Alevín (11-12 años)</b>: Desarrollo táctico y físico para el juego competitivo.</li>
-            <li><b>Cadetes (13-15 años)</b>: Preparación avanzada para competencias, condición física y mental.</li>
-            <li><b>Juvenil (16-18 años)</b>: Entrenamiento de alto rendimiento, enfoque en táctica y profesionalización.</li>
+            <li><b>(4-6 años) Infantil </b>  Primer contacto con el balón, juegos y desarrollo motor básico.</li>
+            <li><b>(7-8 años) Prebenjamín </b> Introducción a reglas, posición en la cancha y trabajo en equipo.</li>
+            <li><b>(9-10 años) Benjamín </b> Enfoque en técnica, defensa y experiencia en partidos.</li>
+            <li><b>(11-12 años) Alevín </b> Desarrollo táctico y físico para el juego competitivo.</li>
+            <li><b>(13-15 años) Cadetes </b> Preparación avanzada para competencias, condición física y mental.</li>
+            <li><b>(16-18 años) Juvenil </b> Entrenamiento de alto rendimiento, enfoque en táctica y profesionalización.</li>
           </ul>
         </div>
         <div className="ContainerImg right">
-          <img src="https://www.ocregister.com/wp-content/uploads/migration/ni8/ni8o88-b88308088z.120150115140755000g8j7dbhn.10.jpg?w=640" alt="" />
+          <img className='filtergreen' src="./img2.png" alt="" />
         </div>
       </div>
     </div>

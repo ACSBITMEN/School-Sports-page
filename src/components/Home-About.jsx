@@ -8,7 +8,7 @@ function HomeAbout() {
       <div className='ContainerAbout'>
         <div className="ContainerImg left">
           <div className="">
-            <img src="https://www.ussportscamps.com/media/images/soccer/nike/camps/CS-gallery-soccer-boyshot.jpg" className="d-block w-100" alt="..."/>
+            <img src="./Img1.png" className="d-block w-100 filtergreen" alt="..."/>
           </div>
         </div>
         <div className="ContainerText right">
