@@ -3,6 +3,15 @@
   padding: 0;
 }
 
+/* Definir variables en :root */
+:root {
+  --firstMain-color: #00FF9C;
+  --secondary-color: #535353;
+  --text-color: white;
+  --font-size-base: 16px;
+  --navbar-height: 70px;
+}
+
 #root {
   width: 100%;
   display: flex;

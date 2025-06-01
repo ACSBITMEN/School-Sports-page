@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import '../stylesheets/HomeCarrusel.css';
 
-function HomeCarrusel() {
+function HomeCarrusel({ src, alt }) {
+  const [isLoaded, setIsLoaded] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
@@ -57,7 +58,7 @@ function HomeCarrusel() {
         {images.map((image, index) => (
           <div
             key={index}
-            className={`carousel-slide ${index === currentIndex ? 'active' : ''}`}
+            className={`carousel-slide image-container ${index === currentIndex ? 'active' : ''}`}
           >
             <img src={image.src} alt={`Slide ${index + 1}`} className="carousel-image" />
             <div className="carousel-caption">
