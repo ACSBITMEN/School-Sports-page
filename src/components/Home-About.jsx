@@ -22,7 +22,7 @@ function HomeAbout() {
         <div
           ref={imgRef}
           className={`ContainerImg fromRight ${isVisible ? 'show' : ''}`}
-          style={{ backgroundImage: 'url(public/Img1.png)' }}
+          style={{ backgroundImage: 'url(https://blog.cognifit.com/wp-content/uploads/2019/10/futbol-1-1200x766.jpg)' }}
         ></div>
         <div className="ContainerText">
           <h3 className="animated-text-h">Nuestra Historia</h3>

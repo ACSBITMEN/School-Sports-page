@@ -1,39 +1,221 @@
 /* src/stylesheets/HomeSedes.css */
 #HomeSedes {
-  background-color: #dee3ec;
+  background-color: white;
   border-radius: 10px;
-  margin: 0 1rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 2rem 1rem 1rem;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  background-color: #cde2f2;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.b1 { grid-area: 1 / 1 / 3 / 6; }
+.b2 { 
+  grid-area: 3 / 1 / 8 / 3;
+  max-height: 27rem;
+  border: 2px solid #0a2c4d;
+  overflow-y: auto;
+}
+.b3 { grid-area: 3 / 3 / 8 / 6; }
+
+
+
+
+/* BLOQUES INDIVIDUALES */
+.bloque {
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+/* TÍTULO Y TEXTO */
+.titulo-principal {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0a2c4d;
 }
 
 .textoIntroSedes {
-  background-color: aquamarine;
-  margin: 0 1rem 20px;
-  text-align: justify;
-  max-width: 1000px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1rem;
+  color: #333;
 }
 
-.sedes select {
-  margin-bottom: 20px;
+/* ACORDEÓN (solo desktop) */
+.accordion .ciudad {
+  margin: 5px .5rem;
 }
 
-.Container-Sedes h4 {
-  margin-top: 20px;
-}
-
-.SubContainerSedes {
-  display: flex;
-}
-
-#MapSede iframe {
-  max-width: 450px;
-  height: 300px;
+.ciudad-titulo {
+  background-color: #004c80;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  text-align: left;
   border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  border-radius: 3px;
 }
 
-#InfoSede {
-  margin-top: 20px;
-  background-color: rgb(227, 203, 250);
+
+
+.ciudad-titulo:hover {
+  background-color: #003a63;
+}
+
+.icono-flecha {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.ciudad-titulo.abierta .icono-flecha {
+  transform: rotate(90deg);
+}
+
+.ciudad-sedes {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  background-color: #f3f7fa;
+  padding: 0 5px;
+}
+
+.ciudad-sedes.mostrar {
+  max-height: 500px;
+  opacity: 1;
+  padding-top: 0.5rem;
+}
+
+/* BOTONES DE SEDE */
+.boton-sede {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.boton-sede:hover {
+  background-color: #e0e0e0;
+}
+
+.select {
+  height: 30px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+/* INFO DE SEDE */
+.info-sede {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 6px;
+}
+
+.detalle-sede {
+  background-color: #fff3e0;
+  padding: 1rem;
+  border: 1px solid #ffb74d;
+  border-radius: 6px;
+  margin: 0 2rem;
+}
+
+.detalle-sede p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #222;
+}
+
+/* MODO MÓVIL: LISTADO */
+.listado-movil .btn-listado {
+  display: block;
+  margin: 0 auto 1rem;
+  background: linear-gradient(#bcd3ec, #89add6);
+  color: #0a2c4d;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: default;
+  border-radius: 6px;
+}
+
+.listado-movil ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.listado-movil li {
+  margin-bottom: 0.5rem;
+}
+
+.listado-movil li ul {
+  margin-top: 0.25rem;
+  padding-left: 1rem;
+}
+
+/* RESPONSIVE */
+@media (min-width: 769px) {
+  .listado-movil {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .accordion {
+    display: none;
+  }
+
+  .info-sede {
+    margin-top: 0;
+  }
+
+/* CONTENEDOR PRINCIPAL */
+.section {
+
+  height: auto;
+  background-color: #cde2f2;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* BLOQUES INDIVIDUALES */
+.bloque {
+  margin-bottom: .5rem;
+  padding: 1.5rem;
+}
+
+
 }
