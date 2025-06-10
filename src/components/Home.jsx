@@ -5,6 +5,7 @@ import HomeAbout from './Home-About.jsx';
 import HomeCategories from './Home-Categories.jsx';
 import HomeSedes from './Home-Sedes.jsx';
 import HomeCarrusel from './Home-Carrusel.jsx';
+import HomeArticulos from './Home-Articulos.jsx';
 
 function Home() {
   return (
@@ -14,10 +15,7 @@ function Home() {
       <HomeAbout />
       <HomeCategories />
       <HomeSedes />
-
-      <div className="secction articulosInteres">Articulos de interes
-        
-      </div>
+      <HomeArticulos />
     </div>
   );
 }
