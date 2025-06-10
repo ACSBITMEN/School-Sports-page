@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import '../stylesheets/HomeSedes.css';
 
 function HomeSedes() {
+  
   const sedesPorCiudad = {
     'Bogotá': [
       {
@@ -65,7 +66,7 @@ function HomeSedes() {
     ],
   };
 
-  const [sedeSeleccionada, setSedeSeleccionada] = useState(null);
+  const [sedeSeleccionada, setSedeSeleccionada] = useState(sedesPorCiudad['Bogotá'][0]);
   const [ciudadesAbiertas, setCiudadesAbiertas] = useState({});
   const [esMovil, setEsMovil] = useState(false);
 
@@ -90,90 +91,93 @@ function HomeSedes() {
   };
 
   return (
-    <div id='HomeSedes' className='section'>
-      <div className='bloque b1'>
-        <h3 className='titulo-principal'>NUESTRAS SEDES</h3>
-        <p className='textoIntroSedes'>
-          En <b>Soccer School</b>, contamos con <b>7 sedes a nivel nacional</b> ubicadas estratégicamente para tu comodidad en las principales ciudades del país y ofrecemos horarios flexibles adaptados a las necesidades de cada familia. Nuestro objetivo es que el fútbol sea accesible para todos, brindando espacios seguros y bien equipados para que tus hijos disfruten de su entrenamiento.
-        </p>
-      </div>
+    <div id='HomeSedes' className=''>
+      <div className='containerSedes section'>
+        <div className='bloque b1'>
+          <h3 className='titulo-principal'>NUESTRAS SEDES</h3>
+          <p className='textoIntroSedes'>
+            En <b>Soccer School</b>, contamos con <b>7 sedes a nivel nacional</b> ubicadas estratégicamente para tu comodidad en las principales ciudades del país y ofrecemos horarios flexibles adaptados a las necesidades de cada familia. Nuestro objetivo es que el fútbol sea accesible para todos, brindando espacios seguros y bien equipados para que tus hijos disfruten de su entrenamiento.
+          </p>
+        </div>
 
-      <div className='bloque b2'>
-        {!esMovil ? (
-          <div className='accordion'>
-            {Object.entries(sedesPorCiudad).map(([ciudad, sedes]) => (
-              <div key={ciudad} className='ciudad'>
-                <button
-                  className={`ciudad-titulo ${ciudadesAbiertas[ciudad] ? 'abierta' : ''}`}
-                  onClick={() => toggleCiudad(ciudad)}
-                >
-                  <span className='icono-flecha'>
-                    {ciudadesAbiertas[ciudad] ? '◄' : '►'}
-                  </span>
-                  {`SEDES ${ciudad.toUpperCase()}`}
-                </button>
-                <div className={`ciudad-sedes ${ciudadesAbiertas[ciudad] ? 'mostrar' : ''}`}>
-                  {sedes.map((sede, index) => (
-                    <button
-                      key={index}
-                      className='boton-sede'
-                      onClick={() => seleccionarSede(sede)}
-                    >
-                      {sede.nombre.toUpperCase()}
-                    </button>
-                  ))}
+        <div className='bloque b2'>
+          {!esMovil ? (
+            <div className='accordion'>
+              {Object.entries(sedesPorCiudad).map(([ciudad, sedes]) => (
+                <div key={ciudad} className='ciudad'>
+                  <button
+                    className={`ciudad-titulo ${ciudadesAbiertas[ciudad] ? 'abierta' : ''}`}
+                    onClick={() => toggleCiudad(ciudad)}
+                  >
+                    <span className='icono-flecha'>
+                      {ciudadesAbiertas[ciudad] ? '◄' : '►'}
+                    </span>
+                    {`SEDES ${ciudad.toUpperCase()}`}
+                  </button>
+                  <div className={`ciudad-sedes ${ciudadesAbiertas[ciudad] ? 'mostrar' : ''}`}>
+                    {sedes.map((sede, index) => (
+                      <button
+                        key={index}
+                        className={`boton-sede ${sedeSeleccionada?.nombre === sede.nombre ? 'activo' : ''}`}
+                        onClick={() => seleccionarSede(sede)}
+                      >
+                        {sede.nombre.toUpperCase()}
+                      </button>
+                    ))}
+                  </div>
                 </div>
+              ))}
+            </div>
+          ) : (
+            <div className='listado-movil'>
+              <label htmlFor='selectorSede'><strong>Selecciona una sede:</strong></label>
+              <select
+                id='selectorSede'
+                className='select'
+                onChange={(e) => {
+                  const valor = e.target.value;
+                  const [ciudad, index] = valor.split('_');
+                  seleccionarSede(sedesPorCiudad[ciudad][index]);
+                }}
+              >
+                <option value=''>-- Elige una sede --</option>
+                {Object.entries(sedesPorCiudad).map(([ciudad, sedes]) =>
+                  sedes.map((sede, idx) => (
+                    <option key={`${ciudad}_${idx}`} value={`${ciudad}_${idx}`}>
+                      {`${ciudad} - ${sede.nombre}`}
+                    </option>
+                  ))
+                )}
+              </select>
+            </div>
+          )}
+        </div>
+
+        {sedeSeleccionada && (
+          <div className='bloque b3'>
+            <div className='info-sede'>
+              <div className='detalle-sede'>
+                <div className='mapa'>
+                  <iframe
+                    src={sedeSeleccionada.mapaEmbedUrl}
+                    width='100%'
+                    height='300'
+                    style={{ border: 0 }}
+                    allowFullScreen=''
+                    loading='lazy'
+                    referrerPolicy='no-referrer-when-downgrade'
+                    title='Mapa de la Sede'
+                  ></iframe>
+                </div>
+                <p className='tituloSedeMap'><strong>{sedeSeleccionada.nombre}</strong></p>
+                <p><strong>Dirección:</strong> {sedeSeleccionada.direccion}</p>
+                <p><strong>Horarios:</strong> {sedeSeleccionada.horarios}</p>
+                <p><strong>Teléfono:</strong> {sedeSeleccionada.telefono}</p>
               </div>
-            ))}
-          </div>
-        ) : (
-          <div className='listado-movil'>
-            <label htmlFor='selectorSede'><strong>Selecciona una sede:</strong></label>
-            <select
-              id='selectorSede'
-              className='select'
-              onChange={(e) => {
-                const valor = e.target.value;
-                const [ciudad, index] = valor.split('_');
-                seleccionarSede(sedesPorCiudad[ciudad][index]);
-              }}
-            >
-              <option value=''>-- Elige una sede --</option>
-              {Object.entries(sedesPorCiudad).map(([ciudad, sedes]) =>
-                sedes.map((sede, idx) => (
-                  <option key={`${ciudad}_${idx}`} value={`${ciudad}_${idx}`}>
-                    {`${ciudad} - ${sede.nombre}`}
-                  </option>
-                ))
-              )}
-            </select>
+            </div>
           </div>
         )}
       </div>
-
-      {sedeSeleccionada && (
-        <div className='bloque b3'>
-          <div className='info-sede'>
-            <div className='detalle-sede'>
-              <div className='mapa'>
-                <iframe
-                  src={sedeSeleccionada.mapaEmbedUrl}
-                  width='100%'
-                  height='300'
-                  style={{ border: 0 }}
-                  allowFullScreen=''
-                  loading='lazy'
-                  referrerPolicy='no-referrer-when-downgrade'
-                  title='Mapa de la Sede'
-                ></iframe>
-              </div>
-              <p><strong>Dirección:</strong> {sedeSeleccionada.direccion}</p>
-              <p><strong>Horarios:</strong> {sedeSeleccionada.horarios}</p>
-              <p><strong>Teléfono:</strong> {sedeSeleccionada.telefono}</p>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

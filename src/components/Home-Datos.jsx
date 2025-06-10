@@ -3,7 +3,7 @@ import '../stylesheets/HomeDatos.css';
 
 function HomeDatos() {
   return (
-    <div id='HomeDatos' className='secction'>
+    <div id='HomeDatos' className=''>
       <div className='dato'>
         <div className='containerIcon'>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person-plus-fill" viewBox="0 0 16 16">

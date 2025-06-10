@@ -15,7 +15,7 @@ function Home() {
       <HomeCategories />
       <HomeSedes />
 
-      <div className="secction">Articulos de interes
+      <div className="secction articulosInteres">Articulos de interes
         
       </div>
     </div>

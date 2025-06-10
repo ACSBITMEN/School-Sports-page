@@ -1,5 +1,5 @@
 .fromRight {
-  transform: translateX(110%);
+  transform: translateX(100%);
   opacity: 0;
 }
 
@@ -9,11 +9,11 @@
 }
 
 #HomeAbout .show {
-  transform: translateX(5%);
+  transform: translateX(0%);
   opacity: 1;
 }
 
 #HomeCategories .show {
-  transform: translateX(-5%);
+  transform: translateX(0%);
   opacity: 1;
 }

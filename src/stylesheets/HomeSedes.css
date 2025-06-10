@@ -1,58 +1,85 @@
 /* src/stylesheets/HomeSedes.css */
 #HomeSedes {
-  background-color: white;
-  border-radius: 10px;
-  margin: 2rem 1rem 1rem;
+  background-image: url(../assets/img/BG02.jpg);
+  background-size: cover;
+  padding: 0;
 }
 
 /* CONTENEDOR PRINCIPAL */
 .section {
-  max-width: 1200px;
-  margin: auto;
-  padding: 2rem 1rem;
-  background-color: #cde2f2;
+  color: #fff;
+  margin: 0 0;
+  padding: 4rem 1rem 5rem;
+  background: #000000;
+  background: linear-gradient(180deg,rgba(109, 109, 109, 0.24) 0%, rgba(0, 0, 0, 0.329) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.466) 75%, rgb(11, 36, 12) 100%);
   box-sizing: border-box;
-
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(7, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 0;
+  grid-row-gap: 1rem;
+  border: 0;
 }
 
-.b1 { grid-area: 1 / 1 / 3 / 6; }
+.b1 { 
+  grid-area: 1 / 1 / 3 / 8; 
+  grid-auto-rows: auto;
+  margin: 1.5rem 0 ;
+  padding: 0 3rem;
+}
 .b2 { 
-  grid-area: 3 / 1 / 8 / 3;
-  max-height: 27rem;
-  border: 2px solid #0a2c4d;
+  grid-area: 3 / 1 / 8 / 4;
   overflow-y: auto;
+  max-height: 27rem;
+  display: flex;
+  justify-content: right;
+  padding-right: 1rem;
 }
-.b3 { grid-area: 3 / 3 / 8 / 6; }
+.b3 { 
+  grid-area: 3 / 4 / 8 / 8;
+  display: flex;
+  justify-content: left;
+    padding-left: 2rem;
+}
 
+/* Estilo para navegadores compatibles */
+.b2::-webkit-scrollbar { 
+  width: 7px; /* Ancho de la barra de scroll */
+  height: 10px; /* Alto de la barra de scroll horizontal */
+}
 
+.b2::-webkit-scrollbar-track {
+  background: #000000; /* Color del fondo de la barra */
+}
+
+.b2::-webkit-scrollbar-thumb {
+  background: #dbdbdb; /* Color de la barra de scroll */
+  border-radius: 0; /* Bordes redondeados */
+}
+
+.b2::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1; /* Color al pasar el mouse sobre la barra */
+}
 
 
 /* BLOQUES INDIVIDUALES */
 .bloque {
   margin-bottom: 1rem;
-  border-radius: 6px;
 }
 
 /* TÍTULO Y TEXTO */
 .titulo-principal {
+  color: #fff;
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 1rem;
-  color: #0a2c4d;
+  margin-bottom: 2rem;
 }
 
 .textoIntroSedes {
   text-align: center;
-  max-width: 800px;
-  margin: auto;
+  margin: 0 1rem;
   font-size: 1rem;
-  color: #333;
 }
 
 /* ACORDEÓN (solo desktop) */
@@ -61,7 +88,7 @@
 }
 
 .ciudad-titulo {
-  background-color: #004c80;
+  background-color: var(--secondary-color);
   color: white;
   font-weight: bold;
   padding: 0.75rem 1rem;
@@ -73,13 +100,12 @@
   display: flex;
   align-items: center;
   transition: background-color 0.3s ease;
-  border-radius: 3px;
 }
 
 
 
 .ciudad-titulo:hover {
-  background-color: #003a63;
+  background-color: var(--secondary-color-hover);
 }
 
 .icono-flecha {
@@ -89,6 +115,7 @@
 
 .ciudad-titulo.abierta .icono-flecha {
   transform: rotate(90deg);
+  color: var(--firstMain-color);
 }
 
 .ciudad-sedes {
@@ -96,8 +123,8 @@
   overflow: hidden;
   opacity: 0;
   transition: all 0.3s ease;
-  background-color: #f3f7fa;
-  padding: 0 5px;
+  background-color: #dbdbdb;
+  padding: 0 5px 5px;
 }
 
 .ciudad-sedes.mostrar {
@@ -108,13 +135,13 @@
 
 /* BOTONES DE SEDE */
 .boton-sede {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   border: 1px solid #ccc;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   width: 100%;
   text-align: left;
   cursor: pointer;
-  margin-bottom: 0.5rem;
+  margin-bottom: 3px;
   transition: background 0.3s ease;
 }
 
@@ -122,9 +149,20 @@
   background-color: #e0e0e0;
 }
 
+.boton-sede.activo {
+  background-color: #ecffd7;
+  border-color: #000000;
+  font-weight: bold;
+  color: #004080;
+  padding-left: 1.5rem;
+}
+
+
 .select {
   height: 30px;
-  padding: 0 5px;
+  padding: 0 5px 0 10px;
+  margin: 0 0 0 10px;
+  width: 190px;
   border-radius: 3px;
 }
 
@@ -132,34 +170,38 @@
 .info-sede {
   display: flex;
   flex-direction: column;
-  gap: 0;
 }
 
 .mapa iframe {
   width: 100%;
   height: 300px;
-  border-radius: 6px;
 }
 
 .detalle-sede {
-  background-color: #fff3e0;
-  padding: 1rem;
-  border: 1px solid #ffb74d;
+  background-color: var(--secondary-color);
+  border: 1px solid #252677;
   border-radius: 6px;
-  margin: 0 2rem;
+  color: #fff;
+  padding: 5px 5px 1rem;
+  width: 100%;
+  max-width: 500px;
 }
 
 .detalle-sede p {
-  margin: 0.5rem 0;
   font-size: 1rem;
-  color: #222;
+  text-align: left;
+  color: var(--text-color);
+  margin: 5px 1rem;
+}
+.detalle-sede .tituloSedeMap {
+  text-align: center;
+  margin: 10px auto;
 }
 
 /* MODO MÓVIL: LISTADO */
 .listado-movil .btn-listado {
   display: block;
   margin: 0 auto 1rem;
-  background: linear-gradient(#bcd3ec, #89add6);
   color: #0a2c4d;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -168,16 +210,13 @@
   cursor: default;
   border-radius: 6px;
 }
-
 .listado-movil ul {
   list-style: none;
   padding-left: 1rem;
 }
-
 .listado-movil li {
   margin-bottom: 0.5rem;
 }
-
 .listado-movil li ul {
   margin-top: 0.25rem;
   padding-left: 1rem;
@@ -202,19 +241,20 @@
 
 /* CONTENEDOR PRINCIPAL */
 .section {
-
-  height: auto;
-  background-color: #cde2f2;
+  height: 100%;
   box-sizing: border-box;
-
   display: flex;
   flex-direction: column;
 }
 
 /* BLOQUES INDIVIDUALES */
 .bloque {
-  margin-bottom: .5rem;
-  padding: 1.5rem;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+.b2 {
+  justify-content: center;
 }
 
 

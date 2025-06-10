@@ -2,22 +2,26 @@
   width: 100%;
   max-width: 1300px;
   height: 100%;
+  background-color: black;
 }
 
 #HomeAbout, #HomeCategories, #HomeSedes {
   height: 100%;
-  padding: 2rem 1rem;
-  background-color: black;
 }
 
 .secction {
-  background-color: #cccccc;
-  height: 200px;
-  border: 1px solid black;
+  min-height: 250px;
 }
 
 .secction:nth-child(1) {
-  background-color: #303030;
   color: #fff;
   height: 740px;
 }
+
+
+/*borrar temporal*/
+.articulosInteres {
+  background-color: #08140a;
+  color: #fff;
+}
+/**/

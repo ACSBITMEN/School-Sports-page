@@ -5,8 +5,9 @@
 
 /* Definir variables en :root */
 :root {
-  --firstMain-color: #00FF9C;
-  --secondary-color: #535353;
+  --firstMain-color: #76FF7A;
+  --secondary-color: #004c80;
+  --secondary-color-hover: #123458;
   --text-color: white;
   --font-size-base: 16px;
   --navbar-height: 70px;
