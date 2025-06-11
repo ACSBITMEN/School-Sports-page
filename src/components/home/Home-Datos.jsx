@@ -1,5 +1,5 @@
 // src/components/Home.jsx
-import '../stylesheets/HomeDatos.css';
+import '../../stylesheets/HomeDatos.css';
 
 function HomeDatos() {
   return (

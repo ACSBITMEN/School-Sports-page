@@ -1,5 +1,5 @@
 // src/components/Home.jsx
-import '../stylesheets/Home.css';
+import '../../stylesheets/Home.css';
 import HomeDatos from './Home-Datos.jsx';
 import HomeAbout from './Home-About.jsx';
 import HomeCategories from './Home-Categories.jsx';

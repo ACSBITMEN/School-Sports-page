@@ -1,41 +1,41 @@
 import { useState, useEffect } from "react";
-import "../stylesheets/Home-Articulos.css";
+import "../../stylesheets/HomeArticulos.css";
 
 const articulos = [
   {
     id: 1,
     titulo: "CampSoccer 2025",
-    descripcion: "La IA está transformando la forma en que vivimos.",
+    descripcion: "Disfruta y desmuestra tus habilidades este 27, 28 y 30",
     imagen: "https://i.pinimg.com/736x/c2/c9/bf/c2c9bf456edb64322da500ef8a67ad0d.jpg",
   },
   {
     id: 2,
-    titulo: "Torneo Local",
-    descripcion: "Tendencias modernas en diseño y desarrollo web.",
+    titulo: "Liga Poni Futbol",
+    descripcion: "Liga de clausura Poni Futbol 2025 ¡Inscripciones Abiertas!",
     imagen: "https://mir-s3-cdn-cf.behance.net/projects/404/06639360880017.Y3JvcCwyMDc0LDE2MjMsNDMwLDIw.png",
   },
-  {
+    {
     id: 3,
-    titulo: "Torneo Departamental",
-    descripcion: "Protege tu información en el mundo digital.",
-    imagen: "https://i.pinimg.com/736x/44/86/4f/44864f8e545eb6f8658654461fda8683.jpg",
+    titulo: "Torneo Fenemino",
+    descripcion: "Vuelven el torneo Dominical de futbol Femenino ¡Nuevo formato!",
+    imagen: "https://www.uptc.edu.co/sitio/export/sites/default/portal/sitios/universidad/rectoria/bie_uni/.galleries/gal_eventos/1/torneo-femenino-nocturno-1.png_133113592.png",
   },
   {
     id: 4,
-    titulo: "Torneo Fenemino",
-    descripcion: "Más allá de las criptomonedas: aplicaciones reales.",
-    imagen: "https://www.uptc.edu.co/sitio/export/sites/default/portal/sitios/universidad/rectoria/bie_uni/.galleries/gal_eventos/1/torneo-femenino-nocturno-1.png_133113592.png",
+    titulo: "Torneo Departamental",
+    descripcion: "Participa y clasifica al Torneo Nacional de Futbol Infantil",
+    imagen: "https://i.pinimg.com/736x/44/86/4f/44864f8e545eb6f8658654461fda8683.jpg",
   },
     {
     id: 5,
     titulo: "Indumentaria 2025",
-    descripcion: "Más allá de las criptomonedas: aplicaciones reales.",
+    descripcion: "El amor a la camiseta ♥ mira la nueva indumentaria 2025",
     imagen: "https://i.pinimg.com/736x/c0/48/4a/c0484a18e597a4613ba24214f8ce3648.jpg",
   },
     {
     id: 6,
-    titulo: "El 11 ideal",
-    descripcion: "Más allá de las criptomonedas: aplicaciones reales.",
+    titulo: "El 11 semanal",
+    descripcion: "Mira los jugadores que la estan ¡Rompiendo! cada fin de semana",
     imagen: "https://i.pinimg.com/736x/08/f8/9d/08f89d65135ea2db9a402b5eb9a86cd7.jpg",
   },
 

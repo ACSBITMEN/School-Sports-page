@@ -9,7 +9,7 @@
 .section {
   color: #fff;
   margin: 0 0;
-  padding: 4rem 1rem 5rem;
+  padding: 5rem 1rem 5rem;
   background: #000000;
   background: linear-gradient(180deg,rgba(109, 109, 109, 0.24) 0%, rgba(0, 0, 0, 0.329) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.466) 75%, rgb(11, 36, 12) 100%);
   box-sizing: border-box;
@@ -178,10 +178,10 @@
 }
 
 .detalle-sede {
-  background-color: var(--secondary-color);
+  background-color: rgb(226, 226, 226);
+  color: #000;
   border: 1px solid #252677;
   border-radius: 6px;
-  color: #fff;
   padding: 5px 5px 1rem;
   width: 100%;
   max-width: 500px;
@@ -190,7 +190,6 @@
 .detalle-sede p {
   font-size: 1rem;
   text-align: left;
-  color: var(--text-color);
   margin: 5px 1rem;
 }
 .detalle-sede .tituloSedeMap {
@@ -256,6 +255,10 @@
 .b2, .b3 {
   justify-content: center;
   padding: 0;
+}
+
+.textoIntroSedes {
+  text-align: justify;
 }
 
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import '../stylesheets/HomeCarrusel.css';
+import '../../stylesheets/HomeCarrusel.css';
 
 function HomeCarrusel({ src, alt }) {
   const [isLoaded, setIsLoaded] = useState(false);

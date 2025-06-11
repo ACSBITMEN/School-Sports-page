@@ -1,6 +1,6 @@
 // HomeSedes.jsx (versión con acordeón por ciudad)
 import { useState, useEffect } from 'react';
-import '../stylesheets/HomeSedes.css';
+import '../../stylesheets/HomeSedes.css';
 
 function HomeSedes() {
   

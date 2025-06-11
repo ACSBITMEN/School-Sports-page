@@ -1,4 +1,4 @@
-#Home {
+#Home, #About {
   width: 100%;
   max-width: 1300px;
   height: 100%;
@@ -18,10 +18,8 @@
   height: 740px;
 }
 
-
-/*borrar temporal*/
-.articulosInteres {
-  background-color: #08140a;
-  color: #fff;
+.btn {
+  cursor: pointer;
+  padding: .5rem 1rem;
+  box-shadow: 0px 2px 6px #00000060;
 }
-/**/

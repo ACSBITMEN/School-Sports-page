@@ -1,10 +1,10 @@
 .fromRight {
-  transform: translateX(100%);
+  transform: translateX(5%);
   opacity: 0;
 }
 
 .fromLeft {
-  transform: translateX(-100%);
+  transform: translateX(-5%);
   opacity: 0;
 }
 

@@ -1,7 +1,7 @@
 // src/components/Home.jsx
 import { useEffect, useRef, useState } from 'react';
-import '../stylesheets/HomeSections.css';
-import '../stylesheets/Animations.css';
+import '../../stylesheets/HomeSections.css';
+import '../../stylesheets/Animations.css';
 
 const HomeCategories = () => {
   const imgRef = useRef(null);

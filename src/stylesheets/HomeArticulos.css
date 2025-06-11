@@ -40,6 +40,7 @@
   width: 100%;
   height: 180px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .contenido {
@@ -47,7 +48,7 @@
 }
 
 .contenido h4 {
-  margin: 0.5rem 0;
+  margin: 0 0 0.5rem;
   font-size: 1.2rem;
 }
 
@@ -58,17 +59,16 @@
 }
 
 .saber-mas {
-  background-color: #007bff;
-  color: white;
+  background-color: var(--firstMain-color);
+  color: #000;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .saber-mas:hover {
-  background-color: #0056b3;
+  background-color: var(--firstMain-color-hover);
 }
 
 .flecha {

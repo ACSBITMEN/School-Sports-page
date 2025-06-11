@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import '../stylesheets/HomeSections.css';
-import '../stylesheets/Animations.css';
+import '../../stylesheets/HomeSections.css';
+import '../../stylesheets/Animations.css';
 
 function HomeAbout() {
   const imgRef = useRef(null);
@@ -33,7 +33,7 @@ function HomeAbout() {
             Adaptamos nuestras metodologías a diferentes edades y niveles de habilidad, desde principiantes hasta jugadores avanzados, siempre asegurándonos de ofrecer un ambiente seguro, inclusivo y divertido.
           </p>
           <a href="./about">
-            <button>Más sobre nosotros</button>
+            <button className='btn btn-moreAbout' >Más sobre nosotros</button>
           </a>
         </div>
       </div>

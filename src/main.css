@@ -6,6 +6,7 @@
 /* Definir variables en :root */
 :root {
   --firstMain-color: #76FF7A;
+  --firstMain-color-hover: #5ddf62;
   --secondary-color: #004c80;
   --secondary-color-hover: #0a2c4d;
   --text-color: white;

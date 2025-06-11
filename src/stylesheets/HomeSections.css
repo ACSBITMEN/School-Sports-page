@@ -11,7 +11,7 @@
 .ContainerText {
   flex: 3;
   background-color: #ffffff;
-  padding: 4rem 5rem 5rem;
+  padding: 4rem 4.5rem 5rem;
   z-index: 2;
   border-radius: 0;
   border: 0;
@@ -34,9 +34,6 @@
   width: 110%;
 }
 
-
-
-
 h3 {
   font-size: clamp(1.1em, 2vw, 1.4em);
   margin: 0 0 2rem;
@@ -52,6 +49,18 @@ h3 {
   font-size: clamp(0.9em, 2vw, 1.1em);
   text-align: justify;
   line-height: 1.6em;
+}
+
+.btn-moreAbout {
+  background-color: var(--firstMain-color);
+  border: 0;
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+}
+.btn-moreAbout:hover {
+  background-color: var(--firstMain-color-hover);
+  
 }
 
 /* Responsive */
@@ -90,5 +99,14 @@ h3 {
   #HomeCategories {
     padding-top: 1rem;
   }
+
+  .btn-moreAbout {
+  background-color: var(--firstMain-color);
+  padding: .5rem 1rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+}
 
 }

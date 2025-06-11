@@ -1,0 +1,161 @@
+#AboutAbout {
+  max-width: 1300px;
+  min-height: 42rem;
+  padding: 3rem 0 5rem;
+}
+
+.soccer-school {
+  position: relative;
+  background-image: url('https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+}
+
+.overlay-degradado {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #10702886, #18230f44, #18230f44);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.contenido-About {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: left;
+  animation: fadeIn 1.2s ease-out forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.texto-encabezado {
+  margin: 2rem auto 0;
+  animation: slideDown 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.subtitulo {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: white;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  margin-top: 0.5rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.cuerpo {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.escudo img {
+  width: 220px;
+  height: auto;
+  filter: drop-shadow(0 0 5px white);
+}
+
+.descripcion {
+  color: white;
+  flex: 1;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-left: 1rem;
+  line-height: 25px;
+}
+
+.descripcion strong {
+  color: var(--firstMain-color);
+}
+
+.sponsors {
+  margin: 1rem auto;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.sponsors p {
+  font-weight: 600;
+}
+
+.borde-rasgado {
+  width: 100%;
+  height: 30px;
+  background-repeat: repeat-y;
+}
+
+.borde-rasgado img {
+  padding-top: 1rem;
+  width: 100%;
+  height: 40px;
+  background: url(../assets/img/Borde01.png);
+  filter: drop-shadow(0 10px 1px rgb(87, 87, 87));
+}
+
+
+.sponsors img {
+  width: 80px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.sponsors img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .cuerpo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .sponsors {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
