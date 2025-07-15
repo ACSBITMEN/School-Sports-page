@@ -27,3 +27,12 @@ main {
   min-height: 90vh;
   flex: 1;
 }
+
+
+#root h1, #root h2, #root h3  {
+  font-family: 'DS-Squad','Segoe UI';
+}
+@font-face {
+  font-family: 'DS-Squad';
+  src: url('./assets/fonts/flying_leatherneck/flyingleatherv2.ttf') format('truetype');
+}

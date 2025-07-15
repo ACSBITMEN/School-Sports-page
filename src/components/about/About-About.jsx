@@ -10,7 +10,7 @@ const AboutAbout = () => {
       <div className="contenido-About">
 
         <div className="texto-encabezado">
-          <h1 className="titulo">SOCCER SCHOOL</h1>
+          <h2 className="titulo"> SOCCER SCHOOL</h2>
           <p className="subtitulo"><strong>School</strong> and Club profesional</p>
         </div>
 

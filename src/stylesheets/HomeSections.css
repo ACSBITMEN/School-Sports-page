@@ -35,14 +35,12 @@
 }
 
 h3 {
-  font-size: clamp(1.1em, 2vw, 1.4em);
+  font-size: clamp(1.1em, 3vw, 3em);
   margin: 0 0 2rem;
-  font-weight: 600;
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
   margin-bottom: 1.5rem;
   color: #0a2c4d;
+  background-color: aqua;
 }
 
 .ContainerText p {
